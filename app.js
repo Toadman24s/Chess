@@ -63,7 +63,7 @@ function dragover(e) {
     e.preventDefault()
 }
 
-function dragdrop() {
+function dragdrop(e) {
     e.stopPropagation
     const correctGo = draggedElement.firstChild.classList.contains(playerGo)
     const taken = e.target.classList.contains('piece')
